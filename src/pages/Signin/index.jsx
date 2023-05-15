@@ -1,5 +1,6 @@
 import { Container, Form, Background } from './styles';
 import { FiMail, FiLock } from 'react-icons/fi'
+import { Link } from 'react-router-dom';
 
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
@@ -10,9 +11,9 @@ export function Signin(){
     <Container>
       <Form>
         <h1>Rocket Notes</h1>
-        <p>Aplicacao para salvar e gerenciar seus links uteis.</p>
+        <p>Aplicação para salvar e gerenciar seus links uteis.</p>
 
-        <h2>faca seu login</h2>
+        <h2>Faça seu login</h2>
 
         <Input 
           placeholder="E-mail"
@@ -28,7 +29,7 @@ export function Signin(){
 
         <Button title="Entrar" />
 
-        <a href="#">Criar conta</a>
+        <Link to="/register">Criar conta</Link>
          
       </Form>
 
